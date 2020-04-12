@@ -2,22 +2,16 @@
 #include "push.c"
 
 static const char *fonts[] = {
-    "Misc xbmicons:size=8",
-    "xos4 Terminus:size=8",
+    "xft:DroidSansMono Nerd Font:pixelsize=12:antialias=true:autohint=true",
+    "xft:JoyPixels:pixelsize=12:antialias=true:autohint=true"
 };
 
-static const char dmenufont[] = "xos4 Terminus:size=8";
+static const char dmenufont[] = "xft:DroidSansMono Nerd Font:pixelsize=12:antialias=true:autohint=true";
 
-static const char col_gray1[] = "#222222";
-static const char col_gray2[] = "#444444";
-static const char col_gray3[] = "#bbbbbb";
-static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[]  = "#005577";
-
-static const char *colors[][3]      = {
-    /*               fg         bg         border   */
-    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-    [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+static const char *colors[][3] = {
+    /*               fg         bg         border    */
+    [SchemeNorm] = { "#5b626c", "#1d1f21", "#282a2e" }, 
+    [SchemeSel]  = { "#c5c8c6", "#1d1f21", "#f0c674" }
 };
 
 static const unsigned int borderpx  = 2;
@@ -27,10 +21,11 @@ static const int showbar            = 1;
 static const int topbar             = 1;
 static const int viewontag          = 1;
 
-static const int horizpadbar        = 2;
-static const int vertpadbar         = 0;
+static const int horizpadbar = 2;
+static const int vertpadbar  = 0;
 
-static const char *tags[ ] = { "\uE000", "\uE001", "\uE008", "\uE002", "\uE006", "\uE007" };
+// static const char *tags[] = { "\uE000", "\uE001", "\uE008", "\uE002", "\uE006", "\uE007" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6" };
 
 static const Rule rules[] = {
     /* class                        instance    title           tagmask     isfloating  monitor */
@@ -54,11 +49,16 @@ static const int   resizehints = 0;
 
 static const Layout layouts[] = {
     /* symbol                 arrange function */
-    { "\uE019 \uE009 \uE019", tile        },
-    { "\uE019 \uE00C \uE019", bstack      },
-    { "\uE019 \uE00D \uE019", gaplessgrid },
-    { "\uE019 \uE00B \uE019", monocle     },
-    { "\uE019 \uE00A \uE019", NULL        },
+    // { "\uE019 \uE009 \uE019", tile        },
+    // { "\uE019 \uE00C \uE019", bstack      },
+    // { "\uE019 \uE00D \uE019", gaplessgrid },
+    // { "\uE019 \uE00B \uE019", monocle     },
+    // { "\uE019 \uE00A \uE019", NULL        },
+    { "T", tile        },
+    { "B", bstack      },
+    { "G", gaplessgrid },
+    { "M", monocle     },
+    { "F", NULL        },
 };
 
 #define MODKEY Mod4Mask
@@ -71,7 +71,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]) { "/bin/sh", "-c", cmd, NULL } }
 
 static char        dmenumon[2] = "0"; 
-static const char *dmenucmd[ ] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[ ] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "#1d1f21", "-nf", "#c5c8c6", "-sb", "#f0c674", "-sf", "#1d1f21", NULL };
 
 static const char *termcmd[] = { "urxvtc", NULL };
 static const char *navgcmd[] = { "palemoon", NULL };
