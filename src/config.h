@@ -10,11 +10,12 @@ static const char *colors[][3] = {
 };
 
 static const unsigned int borderpx  = 1;
+static const unsigned int gappx     = 2;
 static const unsigned int snap      = 32;
-static const int focusonwheel       = 0;
 static const int showbar            = 1;
 static const int topbar             = 1;
 static const int viewontag          = 1;
+static const int focusonwheel       = 0;
 
 static const int horizpadbar = 4;
 static const int vertpadbar  = 4;
