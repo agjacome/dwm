@@ -33,7 +33,12 @@ build() {
 
 package() {
    cd "$srcdir/${pkgname%-agjacome}"
+
+   make DESTDIR="${pkgdir}/" install
+   install -Dm644 doc/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+   install -Dm644 src/dwm.desktop "${pkgdir}/usr/share/xsessions/dwm.desktop"
+
+   make clean
    mkdir -p ${pkgdir}/opt/${pkgname}
-   make DESTDIR="${pkgdir}/" install 
-   install -Dm644 doc/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE" 
+   cp -rf * ${pkgdir}/opt/${pkgname}
 }
