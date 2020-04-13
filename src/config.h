@@ -5,11 +5,11 @@ static const char *fonts[] = { "DroidSansMono Nerd Font:size=10:antialias=true:a
 
 static const char *colors[][3] = {
     /*               fg         bg         border    */
-    [SchemeNorm] = { "#5b626c", "#1d1f21", "#282a2e" },
-    [SchemeSel]  = { "#c5c8c6", "#1d1f21", "#f0c674" }
+    [SchemeNorm] = { "#c5c8c6", "#1d1f21", "#282a2e" },
+    [SchemeSel]  = { "#1d1f21", "#f0c674", "#f0c674" }
 };
 
-static const unsigned int borderpx  = 1;
+static const unsigned int borderpx  = 2;
 static const unsigned int gappx     = 2;
 static const unsigned int snap      = 32;
 static const int showbar            = 1;
@@ -20,7 +20,7 @@ static const int focusonwheel       = 0;
 static const int horizpadbar = 4;
 static const int vertpadbar  = 4;
 
-static const char *tags[] = { "\uF0AC", "\uF086", "\uF03D", "\uF120", "\uF013", "\uF135" };
+static const char *tags[] = { "\uF0AC", "\uF075", "\uF03D", "\uF120", "\uF013", "\uF135" };
 
 static const Rule rules[] = {
     /* class       instance    title    tagmask    isfloating  monitor */
