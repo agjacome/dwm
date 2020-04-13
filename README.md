@@ -27,3 +27,20 @@ following patches:
   configurable gap around clients for aesthetics purposes
 * [viewontag](https://dwm.suckless.org/patches/viewontag/): follow clients to
   the tag they are being moved to
+
+### Installing on ArchLinux
+
+All you need to do is download the `PKGBUILD` file from this repository and
+build the ArchLinux package with `makepkg`:
+
+```
+curl -Ls https://raw.githubusercontent.com/agjacome/dwm/master/PKGBUILD > PKGBUILD
+makepkg -scf
+```
+
+This will generate a package file that you will be able to install with
+`pacman`:
+
+```
+sudo pacman -U dwm-agjacome*.pkg.tar.xz
+```
