@@ -27,6 +27,14 @@ for X. This is my personal build of dwm, which includes the following patches:
 * [viewontag](https://dwm.suckless.org/patches/viewontag/): follow clients to
   the tag they are being moved to
 
+### Extra customizations
+
+Apart from the patches, my current build is complemented with extra
+customizations to other different programs and utilities:
+
+* [dwmblocks](https://github.com/agjacome/dwmblocks): my own dwmblocks
+  customization for the dwm statusbar
+
 ### Dependencies
 
 * [nerd-fonts](https://www.nerdfonts.com/): the only font needed at the moment
