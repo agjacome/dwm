@@ -1,6 +1,6 @@
 # Maintainer: Alberto G. Jácome (agjacome) <agjacome@gmail.com>
 pkgname=dwm-agjacome
-pkgver=r1696.37dea4a
+pkgver=r1701.e477219
 pkgrel=1
 pkgdesc="Heavily-patched customized build of dwm to suit my own needs"
 arch=(x86_64 i686)
