@@ -14,8 +14,6 @@ for X. This is my personal build of dwm, which includes the following patches:
   focused only by mouse click and not only by mouse hover
 * [gaplessgrid](https://dwm.suckless.org/patches/gaplessgrid/): layout which
   arranges all clients in a grid
-* [noborder](https://dwm.suckless.org/patches/noborder/): remove border when
-  there is only one client visible
 * [push](https://dwm.suckless.org/patches/push/): move clients through the
   list with simple keybinds
 * [scratchpad](https://dwm.suckless.org/patches/scratchpad/): spawn or restore
