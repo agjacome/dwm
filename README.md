@@ -6,6 +6,8 @@ My own customized build of dwm
 **[dwm](https://dwm.suckless.org/)** is an extremely fast tiling window manager
 for X. This is my personal build of dwm, which includes the following patches:
 
+* [alternativetags](https://dwm.suckless.org/patches/alternativetags/): allow
+  switching tags between normal and alternative set of icons in runtime
 * [attachaside](https://dwm.suckless.org/patches/attachaside/): make new
   clients appear in the stacking area instead of master
 * [bottomstack](https://dwm.suckless.org/patches/bottomstack/): layout which

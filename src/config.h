@@ -20,7 +20,8 @@ static const int focusonwheel       = 0;
 static const int horizpadbar = 4;
 static const int vertpadbar  = 4;
 
-static const char *tags[] = { "\uF0AC", "\uF075", "\uF03D", "\uF120", "\uF013", "\uF135" };
+static const char  *tags[]   = { "\uF0AC", "\uF075", "\uF03D", "\uF120", "\uF013", "\uF135" };
+static const char *tagsalt[] = { "\uF6C9", "\uF6CA", "\uF6CB", "\uF6CC", "\uF6CD", "\uF6CE" };
 
 static const Rule rules[] = {
     /* class       instance    title    tagmask    isfloating  monitor */
@@ -99,6 +100,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,     XK_comma,           tagmon,             {.i = -1 } },
     { MODKEY|ShiftMask,     XK_period,          tagmon,             {.i = +1 } },
     { MODKEY|ShiftMask,     XK_q,               quit,               {0} },
+    { MODKEY|ShiftMask,     XK_m,               togglealttag,       {0} },
     TAGKEYS(                XK_z,               0)
     TAGKEYS(                XK_x,               1)
     TAGKEYS(                XK_c,               2)
