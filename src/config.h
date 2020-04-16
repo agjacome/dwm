@@ -10,7 +10,7 @@ static const char *colors[][3] = {
 };
 
 static const unsigned int borderpx  = 2;
-static const unsigned int gappx     = 2;
+static const unsigned int gappx     = 4;
 static const unsigned int snap      = 32;
 static const int showbar            = 1;
 static const int topbar             = 1;
