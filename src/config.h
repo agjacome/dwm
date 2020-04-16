@@ -52,15 +52,14 @@ static const Layout layouts[] = {
 
 #define SHCMD(cmd) { .v = (const char*[]) { "/bin/sh", "-c", cmd, NULL } }
 
-static char        dmenumon[2] = "0";
-static const char  dmenufnt[ ] = "DroidSansMono Nerd Font:size=12:antialias=true:autohint=true";
-static const char *dmenucmd[ ] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufnt, "-nb", "#1d1f21", "-nf", "#c5c8c6", "-sb", "#f0c674", "-sf", "#1d1f21", "-p", "Run:", NULL };
+static char dmenumon[2] = "0";
 
-static const char *termcmd[] = { "urxvtc", NULL };
-static const char *navgcmd[] = { "palemoon", NULL };
-static const char *mailcmd[] = { "urxvtc", "-e", "mutt", NULL };
-static const char *shotcmd[] = { "scrot", "-mq10", NULL };
-static const char *lockcmd[] = { "slock", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
+static const char *termcmd[]  = { "urxvtc", NULL };
+static const char *lockcmd[]  = { "slock", NULL };
+static const char *mailcmd[]  = { "urxvtc", "-e", "mutt", NULL };
+static const char *navgcmd[]  = { "palemoon", NULL };
+static const char *shotcmd[]  = { "scrot", "-mq10", NULL };
 
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "urxvtc", "-name", scratchpadname, "-geometry", "100x25", NULL };

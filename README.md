@@ -32,6 +32,8 @@ for X. This is my personal build of dwm, which includes the following patches:
 Apart from the patches, my current build is complemented with extra
 customizations to other different programs and utilities:
 
+* [dmenu](https://github.com/agjacome/dmenu): my own dmenu launcher
+  customization
 * [dwmblocks](https://github.com/agjacome/dwmblocks): my own dwmblocks
   customization for the dwm statusbar
 
