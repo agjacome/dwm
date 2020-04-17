@@ -20,13 +20,14 @@ static const int focusonwheel       = 0;
 static const int horizpadbar = 4;
 static const int vertpadbar  = 4;
 
-static const char  *tags[]   = { "\uF0AC", "\uF075", "\uF03D", "\uF120", "\uF013", "\uF135" };
+static const char *tags[]    = { "\uF0AC", "\uF007", "\uF120", "\uF013", "\uF0C3", "\uF135" };
 static const char *tagsalt[] = { "\uF6C9", "\uF6CA", "\uF6CB", "\uF6CC", "\uF6CD", "\uF6CE" };
 
 static const Rule rules[] = {
     /* class       instance    title    tagmask    isfloating  monitor */
     { "feh",       NULL,       NULL,    0,         1,          0 },
     { "mpv",       NULL,       NULL,    0,         1,          0 },
+    { "zoom",      NULL,       NULL,    0,         1,          0 },
     { "Pale moon", NULL,       NULL,    1,         0,          0 },
 };
 
