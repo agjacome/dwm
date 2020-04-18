@@ -27,7 +27,7 @@ static const Rule rules[] = {
     /* class       instance    title    tagmask    isfloating  monitor */
     { "feh",       NULL,       NULL,    0,         1,          0 },
     { "mpv",       NULL,       NULL,    0,         1,          0 },
-    { "zoom",      NULL,       NULL,    0,         1,          0 },
+    { "zoom",      NULL,       NULL,    0,         0,          0 },
     { "Pale moon", NULL,       NULL,    1,         0,          0 },
 };
 
