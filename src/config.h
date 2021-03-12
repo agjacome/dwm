@@ -24,11 +24,12 @@ static const char *tags[]    = { "\uF0AC", "\uF007", "\uF120", "\uF013", "\uF0C3
 static const char *tagsalt[] = { "\uF6C9", "\uF6CA", "\uF6CB", "\uF6CC", "\uF6CD", "\uF6CE" };
 
 static const Rule rules[] = {
-    /* class       instance    title    tagmask    isfloating  monitor */
-    { "feh",       NULL,       NULL,    0,         1,          0 },
-    { "mpv",       NULL,       NULL,    0,         1,          0 },
-    { "zoom",      NULL,       NULL,    0,         0,          0 },
-    { "Pale moon", NULL,       NULL,    1,         0,          0 },
+    /* class            instance    title    tagmask    isfloating  monitor */
+    { "feh",            NULL,       NULL,    0,         1,          0 },
+    { "mpv",            NULL,       NULL,    0,         1,          0 },
+    { "zoom",           NULL,       NULL,    0,         0,          0 },
+    { "Pale moon",      NULL,       NULL,    1,         0,          0 },
+    { "Vivaldi-stable", NULL,       NULL,    1,         0,          0 },
 };
 
 static const float mfact       = 0.50;
@@ -59,7 +60,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "urxvtc", NULL };
 static const char *lockcmd[]  = { "slock", NULL };
 static const char *mailcmd[]  = { "urxvtc", "-e", "mutt", NULL };
-static const char *navgcmd[]  = { "palemoon", NULL };
+static const char *navgcmd[]  = { "vivaldi", NULL };
 static const char *shotcmd[]  = { "scrot", "-mq10", NULL };
 
 static const char scratchpadname[] = "scratchpad";
