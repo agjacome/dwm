@@ -57,14 +57,20 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0";
 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
-static const char *termcmd[]  = { "urxvtc", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *lockcmd[]  = { "slock", NULL };
-static const char *mailcmd[]  = { "urxvtc", "-e", "mutt", NULL };
+static const char *mailcmd[]  = { "alacritty", "-e", "mutt", NULL };
 static const char *navgcmd[]  = { "vivaldi", NULL };
 static const char *shotcmd[]  = { "scrot", "-mq10", NULL };
 
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "urxvtc", "-name", scratchpadname, "-geometry", "100x25", NULL };
+static const char *scratchpadcmd[] = {
+    "alacritty",
+    "-t", scratchpadname,
+    "-o", "window.dimensions.columns=100",
+    "-o", "window.dimensions.lines=25",
+    NULL
+};
 
 static Key keys[] = {
     // modifier             key                 function            argument
