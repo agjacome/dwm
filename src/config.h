@@ -25,10 +25,6 @@ static const char *tagsalt[] = { "\uF6C9", "\uF6CA", "\uF6CB", "\uF6CC", "\uF6CD
 
 static const Rule rules[] = {
     /* class            instance    title    tagmask    isfloating  monitor */
-    { "feh",            NULL,       NULL,    0,         1,          0 },
-    { "mpv",            NULL,       NULL,    0,         1,          0 },
-    { "zoom",           NULL,       NULL,    0,         1,          0 },
-    { "Pale moon",      NULL,       NULL,    1,         0,          0 },
     { "Vivaldi-stable", NULL,       NULL,    1,         0,          0 },
 };
 
