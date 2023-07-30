@@ -41,9 +41,8 @@ customizations to other different programs and utilities:
 
 * [nerd-fonts](https://www.nerdfonts.com/): the only font needed at the moment
   is `DroidSansMono Nerd Font`
-* [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html): the build
-  assumes a running `urxvt` daemon and an available `urxvtc` for creating
-  client terminals
+* [alacritty](https://alacritty.org): terminal emulator, the build assumes that
+  it is properly installed and available in the path
 * [dmenu](https://tools.suckless.org/dmenu/): dynamic menu for X, used as
   application launcher
 * Libraries: libx11, libxinerama, libxft and freetype2
