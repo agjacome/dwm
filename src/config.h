@@ -1,7 +1,7 @@
 #include "gaplessgrid.c"
 #include "push.c"
 
-static const char *fonts[] = { "DroidSansMono Nerd Font:size=10:antialias=true:autohint=true" };
+static const char *fonts[] = { "DroidSansM Nerd Font:size=11:antialias=true:autohint=true" };
 
 static const char *colors[][3] = {
     /*               fg         bg         border    */
