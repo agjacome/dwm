@@ -18,7 +18,7 @@ static const int viewontag          = 1;
 static const int focusonwheel       = 0;
 
 static const int horizpadbar = 4;
-static const int vertpadbar  = 4;
+static const int vertpadbar  = 2;
 
 static const char *tags[]    = { "\uF0AC", "\uF007", "\uF120", "\uF013", "\uF0C3", "\uF135" };
 static const char *tagsalt[] = { "\uF6C9", "\uF6CA", "\uF6CB", "\uF6CC", "\uF6CD", "\uF6CE" };
